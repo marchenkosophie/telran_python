@@ -58,3 +58,9 @@ print(merge_lists([1, 2],[3],[4, 5],[]))
 
 
 print(merge_lists())
+
+
+def build_message(*words, separator = ' '):
+    return separator.join(words)
+
+print(build_message("Lucky", "Spitz", "White", "Spitz"))
