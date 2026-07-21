@@ -1,5 +1,6 @@
 import csv
 import json
+from pathlib import Path
 
 
 def save_shopping_list(items):
@@ -51,3 +52,15 @@ def save_profile(name,age,city):
 
 
 save_profile("Maria", 30, "Haifa")
+
+
+def create_reports_folder():
+    reports_dir = Path("reports_1")
+    reports_dir.mkdir(exist_ok=True)
+    result_file = reports_dir/"result.txt"
+    with open (result_file, "w", encoding="utf-8") as file:
+        file.write("Homework completed successfully!")
+
+
+
+create_reports_folder()
