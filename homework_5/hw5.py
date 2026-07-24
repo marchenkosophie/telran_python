@@ -82,3 +82,16 @@ try:
     validate_age(150)
 except ValueError as e:
     print(e)
+
+
+
+print("**************")
+
+ages = [17,25,-5,150,40,300,46,119,99]
+
+
+for age_ages in ages:
+    try:
+        print(validate_age(age_ages))
+    except ValueError as e:
+        print(e)
